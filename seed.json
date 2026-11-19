@@ -1,0 +1,856 @@
+[
+ {
+  "cat": "Hot Coffee",
+  "name": "Espresso (Single)",
+  "price": 75,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Espresso (Double)",
+  "price": 85,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Macchiato",
+  "price": 90,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Cortado",
+  "price": 95,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Americano",
+  "price": 90,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Flat White",
+  "price": 100,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Cappuccino",
+  "price": 110,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Latte",
+  "price": 110,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Caramel Macchiato",
+  "price": 135,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Spanish Latte",
+  "price": 140,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Salted Caramel Latte",
+  "price": 135,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Toffee Nut Latte",
+  "price": 135,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Pistachio Latte",
+  "price": 150,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Mocha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "White Mocha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Turkish Coffee (Single)",
+  "price": 75,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "Turkish Coffee (Double)",
+  "price": 85,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Hot Coffee",
+  "name": "French Coffee",
+  "price": 90,
+  "descr": "",
+  "img": "/img/capp.webp"
+ },
+ {
+  "cat": "Tea",
+  "name": "English Breakfast Tea",
+  "price": 75,
+  "descr": "",
+  "img": "/img/tea.webp"
+ },
+ {
+  "cat": "Tea",
+  "name": "Green Mint Tea",
+  "price": 75,
+  "descr": "",
+  "img": "/img/tea.webp"
+ },
+ {
+  "cat": "Tea",
+  "name": "Green Tea",
+  "price": 75,
+  "descr": "",
+  "img": "/img/tea.webp"
+ },
+ {
+  "cat": "Tea",
+  "name": "Earl Grey Tea",
+  "price": 75,
+  "descr": "",
+  "img": "/img/tea.webp"
+ },
+ {
+  "cat": "Hot Beverages",
+  "name": "Hot Chocolate Classic",
+  "price": 125,
+  "descr": "",
+  "img": "/img/choc.webp"
+ },
+ {
+  "cat": "Hot Beverages",
+  "name": "Hot Matcha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/choc.webp"
+ },
+ {
+  "cat": "Hot Beverages",
+  "name": "Sahlab Classic",
+  "price": 130,
+  "descr": "",
+  "img": "/img/choc.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Americano",
+  "price": 110,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Latte",
+  "price": 125,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Caramel Macchiato",
+  "price": 135,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Spanish Latte",
+  "price": 140,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Salted Caramel Latte",
+  "price": 135,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Mocha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced White Mocha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Chocolate",
+  "price": 125,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Iced Matcha",
+  "price": 135,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Iced Coffee",
+  "name": "Matcha Cloud Blueberry",
+  "price": 150,
+  "descr": "",
+  "img": "/img/iced.webp"
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Caramel Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Mocha Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Spanish Frappe",
+  "price": 150,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Salted Caramel Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "White Mocha Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Coffee Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Toffee Nut Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Frappe",
+  "name": "Pistachio Frappe",
+  "price": 150,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Non-Coffee Frappe",
+  "name": "Matcha Frappe",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Non-Coffee Frappe",
+  "name": "Lotus Frappe",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Non-Coffee Frappe",
+  "name": "Vanilla Caramel Frappe",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Non-Coffee Frappe",
+  "name": "Strawberry Frappe",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Non-Coffee Frappe",
+  "name": "Blueberry Frappe",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Smoothies",
+  "name": "Blueberry Smoothie",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Smoothies",
+  "name": "Peach Smoothie",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Smoothies",
+  "name": "Passion & Peach Smoothie",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Smoothies",
+  "name": "Green Apple Smoothie",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Smoothies",
+  "name": "Strawberry Smoothie",
+  "price": 135,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Mojito",
+  "name": "Classic Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Mojito",
+  "name": "Passion Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Mojito",
+  "name": "Strawberry Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Mojito",
+  "name": "Peach Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Mojito",
+  "name": "Blueberry Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Mojito",
+  "name": "Blue Mojito",
+  "price": 130,
+  "descr": "",
+  "img": "/img/mojito.webp"
+ },
+ {
+  "cat": "Fresh Juice",
+  "name": "Fresh Lemon Mint",
+  "price": 130,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Fresh Juice",
+  "name": "Orange Juice",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Fresh Juice",
+  "name": "Mango Juice",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Fresh Juice",
+  "name": "Strawberry Juice",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Soft Drinks",
+  "name": "Red Bull",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Soft Drinks",
+  "name": "Mineral Water 0.6L",
+  "price": 25,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Soft Drinks",
+  "name": "Sparkling Water",
+  "price": 60,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Plain Croissant",
+  "price": 80,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Cheese Croissant",
+  "price": 110,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Turkey Brown Croissant",
+  "price": 125,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Almond Croissant",
+  "price": 120,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Pain Au Chocolat",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Tiramisu Danish",
+  "price": 120,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Danish & Brownies",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Croissant",
+  "name": "Hotdog Roll",
+  "price": 85,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "Nutella Donut",
+  "price": 85,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "Chocolate Rega Donut",
+  "price": 85,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "Boston Cream Donut",
+  "price": 85,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "Lotus Donut",
+  "price": 85,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "English Cake Vanilla",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "English Cake Marble",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Donuts & Cake",
+  "name": "Nutella Volcano Cake",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Salads",
+  "name": "Chicken Caesar Salad",
+  "price": 160,
+  "descr": "Lettuce, Parmesan cheese, grilled chicken, Caesar dressing, croutons",
+  "img": "/img/salad.webp"
+ },
+ {
+  "cat": "Salads",
+  "name": "Quinoa Salad",
+  "price": 150,
+  "descr": "Quinoa, grilled chicken, peppers, red beans, sweet corn, cherry tomatoes, honey mustard dressing",
+  "img": ""
+ },
+ {
+  "cat": "Salads",
+  "name": "Tuna Salad",
+  "price": 150,
+  "descr": "Lettuce, peppers, cherry tomatoes, lemon tuna, sweetcorn, red beans, Caesar dressing",
+  "img": ""
+ },
+ {
+  "cat": "Salads",
+  "name": "Chef Salad",
+  "price": 160,
+  "descr": "Chicken breast, lettuce, smoked turkey, smoked beef, cheddar, cherry tomato, bell pepper, chef sauce",
+  "img": "/img/salad.webp"
+ },
+ {
+  "cat": "Desserts",
+  "name": "Carrot Cake",
+  "price": 130,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Tiramisu",
+  "price": 130,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Red Velvet",
+  "price": 130,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Blueberry Cheesecake",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Lotus Cheesecake",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Molten Cake",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Honey Cake",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Tres Leches",
+  "price": 150,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Apple Tart",
+  "price": 130,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Lemon Raspberry Tart",
+  "price": 110,
+  "descr": "",
+  "img": "/img/d1.webp"
+ },
+ {
+  "cat": "Desserts",
+  "name": "Matilda Cake",
+  "price": 160,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Sugar Free Fudge Cake",
+  "price": 160,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "San Sebastian",
+  "price": 160,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Chocolate Pops",
+  "price": 70,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Tiramisu Cup",
+  "price": 140,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Raspberry Mille-Feuille",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Sugar Mille-Feuille",
+  "price": 95,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Chocolate Éclair",
+  "price": 90,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Caramel Éclair",
+  "price": 90,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Brownie Chocolate",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Brownie German",
+  "price": 100,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Desserts",
+  "name": "Cookies",
+  "price": 90,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Full Cream Milk",
+  "price": 35,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Coconut Milk",
+  "price": 50,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Almond Milk",
+  "price": 50,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Fresh Cream",
+  "price": 30,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Espresso Shot",
+  "price": 40,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Add-ons",
+  "name": "Honey",
+  "price": 25,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Turkish P. Retail",
+  "price": 250,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Turkish H. Retail",
+  "price": 250,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Guatemala Beans 250gr",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Ethiopian Beans 250gr",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Kenya Beans 250gr",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Colombia Beans 250gr",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Brazilian Beans",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Costa Rican Beans",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ },
+ {
+  "cat": "Coffee Bags",
+  "name": "Salvador Beans",
+  "price": 450,
+  "descr": "",
+  "img": ""
+ }
+]

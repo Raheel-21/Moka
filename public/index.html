@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moka – Order from your table</title>
+<style>
+:root{--bg:#f5f1ee;--card:#fff;--tx:#2a1a1c;--mut:#7a6a68;--ac:#008c45;--on:#fff;--pk:#f59ec2;--rd:#b71c2b;--bd:#e5dbd6;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171212;--card:#241b1b;--tx:#f5ebe8;--mut:#b8a8a5;--ac:#22b86a;--on:#08140d;--pk:#f59ec2;--rd:#ff7b88;--bd:#3a2d2d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171212;--card:#241b1b;--tx:#f5ebe8;--mut:#b8a8a5;--ac:#22b86a;--on:#08140d;--pk:#f59ec2;--rd:#ff7b88;--bd:#3a2d2d;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding-bottom:100px}
+header{padding:20px 16px 12px;text-align:center}
+h1{margin:0;font-size:34px;letter-spacing:1px;color:var(--ac);text-transform:lowercase}
+.sub{color:var(--mut);font-size:14px;margin-top:2px}
+.sub b{color:var(--rd)}
+main{max-width:640px;margin:0 auto;padding:0 12px}
+.cats{display:flex;flex-wrap:wrap;gap:8px;padding:8px 0}
+.sec{margin:22px 0 4px;color:var(--ac);font-size:20px;scroll-margin-top:10px}
+.cats button{flex:none;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:20px;font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+.cats button.on{background:var(--ac);color:var(--on);border-color:var(--ac)}
+.item{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin:8px 0}
+.item b{display:block;font-weight:600}.item small{color:var(--mut)}.item .pr{color:var(--rd);font-weight:700}
+.qty{display:flex;align-items:center;gap:10px}
+.qty button{border:0;background:var(--ac);color:var(--on);width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer}
+.bar{position:fixed;inset:auto 0 0 0;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--bd)}
+.big{display:block;width:100%;max-width:616px;margin:auto;border:0;background:var(--ac);color:var(--on);padding:14px;border-radius:12px;font:inherit;font-size:17px;font-weight:700;cursor:pointer}
+.big:disabled{opacity:.4}
+.panel{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0}
+.pay label{display:block;border:1px solid var(--bd);border-radius:10px;padding:10px;margin:8px 0;cursor:pointer}
+.pay input{margin-inline-end:8px}
+.row{display:flex;justify-content:space-between;gap:8px;margin:6px 0}
+.tot{font-weight:700;font-size:18px}
+input[type=text],textarea{width:100%;font:inherit;padding:10px;border-radius:10px;border:1px solid var(--bd);background:var(--bg);color:var(--tx)}
+.tag{display:inline-block;padding:3px 10px;border-radius:12px;background:var(--pk);color:#5a1230;font-size:13px}
+.ord{border-inline-start:5px solid var(--rd)}
+.ord.done{opacity:.55;border-inline-start-color:var(--ac)}
+.act button{border:1px solid var(--ac);background:none;color:var(--ac);padding:8px 12px;border-radius:8px;font:inherit;cursor:pointer}
+.note{font-size:13px;color:var(--mut)}
+a{color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.grid .cats,.grid .sec{grid-column:1/-1}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:46px;background:color-mix(in srgb,var(--pk) 35%,var(--card))}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph img.cut{object-fit:contain;padding:8px}
+.cb{padding:10px;display:flex;flex-direction:column;flex:1}
+.cb b{font-size:14px;line-height:1.25}
+.ds{font-size:12px;color:var(--mut);margin:3px 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ds:empty{margin:0 0 6px}
+.cf{display:flex;justify-content:space-between;align-items:center;margin-top:auto;gap:6px}
+.cf .qty{gap:8px}.cf .qty button{width:32px;height:32px}
+</style>
+</head>
+<body>
+<header><h1>moka</h1><div class="sub">Zahraa El Maadi</div></header>
+<main id="app"><div class="panel note">Loading menu…</div></main>
+<div class="bar" id="bar"></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const EMO={"Hot Coffee":"☕","Tea":"🍵","Hot Beverages":"🍫","Iced Coffee":"🧋","Coffee Frappe":"🥤","Non-Coffee Frappe":"🥤","Smoothies":"🍓","Mojito":"🍹","Fresh Juice":"🍊","Soft Drinks":"🥫","Croissant":"🥐","Donuts & Cake":"🍩","Salads":"🥗","Desserts":"🍰","Add-ons":"➕","Coffee Bags":"🫘"};
+const PAY={cash:"Cash to the waiter",card:"Card (waiter brings the POS machine)"};
+const STX={new:"Order received",prep:"Being prepared 👨‍🍳",ready:"Ready – on its way to you",done:"Delivered · enjoy!",cancelled:"Order cancelled"};
+let MENU=[],CATS=[],cart={},step="menu",pay="cash",last=null,tm,F={tbl:(location.hash.match(/^#t(\d+)$/)||[])[1]||"",nm:"",phone:"",email:"",note:""};
+const money=n=>n+" EGP",count=()=>Object.values(cart).reduce((a,b)=>a+b,0),total=()=>Object.keys(cart).reduce((s,i)=>s+cart[i]*MENU[i].price,0);
+async function load(){try{MENU=await(await fetch("/api/menu")).json();CATS=[...new Set(MENU.map(m=>m.cat))];MENU.sort((a,b)=>CATS.indexOf(a.cat)-CATS.indexOf(b.cat));render()}catch{$("#app").innerHTML='<div class="panel">Could not load the menu. Please refresh.</div>'}}
+function render(){$("#app").className=step==="menu"?"grid":"";step==="menu"?menuView():step==="checkout"?checkoutView():doneView()}
+function menuView(){
+ $("#app").innerHTML=`<div class="cats">${CATS.map((c,k)=>`<button onclick="document.getElementById('s${k}').scrollIntoView({behavior:'smooth'})">${esc(c)}</button>`).join("")}</div>`+MENU.map((m,i)=>(i===0||MENU[i-1].cat!==m.cat?`<h3 class="sec" id="s${CATS.indexOf(m.cat)}">${esc(m.cat)}</h3>`:"")+`<div class="card"><div class="ph">${m.img?`<img class="${m.img.startsWith("/img/")?"cut":""}" src="${esc(m.img)}" alt="">`:`<span>${EMO[m.cat]||"☕"}</span>`}</div><div class="cb"><b>${esc(m.name)}</b><div class="ds">${esc(m.descr)}</div><div class="cf"><span class="pr">${money(m.price)}</span><div class="qty">${cart[i]?`<button onclick="chg(${i},-1)">−</button><span>${cart[i]}</span>`:""}<button onclick="chg(${i},1)">+</button></div></div></div></div>`).join("");
+ $("#bar").innerHTML=`<button class="big" ${count()?"":"disabled"} onclick="step='checkout';render();scrollTo(0,0)">${count()?`Review order (${count()}) · ${money(total())}`:"Pick something tasty"}</button>`}
+function chg(i,d){cart[i]=Math.max(0,(cart[i]||0)+d);if(!cart[i])delete cart[i];const y=scrollY;render();scrollTo(0,y)}
+function checkoutView(){
+ const lines=Object.keys(cart).map(i=>`<div class="row"><span>${cart[i]} × ${esc(MENU[i].name)}</span><span>${money(cart[i]*MENU[i].price)}</span></div>`).join("");
+ const inp=(k,ph,x="")=>`<input type="text" ${x} placeholder="${ph}" value="${esc(F[k])}" oninput="F.${k}=this.value"><br><br>`;
+ $("#app").innerHTML=`<div class="panel"><b>Your order</b>${lines}<div class="row tot"><span>Total</span><span>${money(total())}</span></div></div>
+ <div class="panel pay"><b>Payment method</b>${Object.entries(PAY).map(([k,v])=>`<label><input type="radio" name="p" ${pay===k?"checked":""} onchange="pay='${k}'">${v}</label>`).join("")}</div>
+ <div class="panel">${inp("tbl","Table number *",'inputmode="numeric" maxlength="10"')}${inp("nm","Your name *")}${inp("phone","Phone number *",'inputmode="tel"')}${inp("email","Email address *",'inputmode="email"')}<textarea rows="2" placeholder="Notes (no sugar, extra hot, etc.)" oninput="F.note=this.value">${esc(F.note)}</textarea><div id="er" class="note" style="color:var(--rd);margin-top:6px"></div></div>`;
+ $("#bar").innerHTML=`<button class="big" id="go" onclick="send()">Place order</button><div style="text-align:center;margin-top:6px"><a href="#" onclick="step='menu';render();return false">Back to menu</a></div>`}
+async function send(){
+ const er=$("#er"),bad=m=>{er.textContent=m};
+ if(!F.tbl.trim())return bad("Please enter your table number.");if(!F.nm.trim())return bad("Please enter your name.");
+ if(!/^\+?[\d\s-]{8,}$/.test(F.phone.trim()))return bad("Please enter a valid phone number.");if(!/^\S+@\S+\.\S+$/.test(F.email.trim()))return bad("Please enter a valid email address.");
+ $("#go").disabled=true;
+ try{const r=await fetch("/api/orders",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({tbl:F.tbl,name:F.nm,phone:F.phone,email:F.email,note:F.note,pay,items:Object.keys(cart).map(i=>({id:MENU[i].id,q:cart[i]}))})});const j=await r.json();if(!r.ok)throw j.error;
+  last={id:j.id,total:j.total,pay};cart={};F.note="";step="done";render();scrollTo(0,0);clearInterval(tm);tm=setInterval(poll,5000)}catch(e){bad(typeof e==="string"?e:"Could not send the order, please try again.");$("#go").disabled=false}}
+async function poll(){try{const j=await(await fetch("/api/orders/"+last.id)).json(),e=$("#st");if(e)e.textContent=STX[j.status]||""}catch{}}
+function doneView(){
+ $("#app").innerHTML=`<div class="panel" style="text-align:center"><h2>Order sent!</h2><p>${money(last.total)} · ${PAY[last.pay]}</p><p class="note">Your waiter will bring it to you shortly.</p><div class="tag" id="st">${STX.new}</div></div>`;
+ $("#bar").innerHTML=`<button class="big" onclick="step='menu';render()">Order something else</button>`}
+load();
+</script>
+</body>
+</html>
