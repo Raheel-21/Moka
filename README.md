@@ -24,10 +24,3 @@ The first run creates the user `admin` with `ADMIN_PASSWORD` (or a random passwo
 
 ## Files
 `server.js` API and static server, `seed.json` initial menu (loaded on first run only), `public/` the two pages and images, `data/` database.
-
-## screenshots
-![menu](screenshots/menu.png)
-![orders](screenshots/order.png)
-
-
-
