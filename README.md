@@ -26,9 +26,9 @@ The first run creates the user `admin` with `ADMIN_PASSWORD` (or a random passwo
 `server.js` API and static server, `seed.json` initial menu (loaded on first run only), `public/` the two pages and images, `data/` database.
 
 ## Screenshots
-![Menu](f:/Youssef/moka/screenbshots/menu.png)
-![Item Selection](f:/Youssef/moka/screenbshots/select-item.png)
-![Payment](f:/Youssef/moka/screenbshots/payment-method.png)
-![Admin Login](f:/Youssef/moka/screenbshots/admin-login-page.png)
-![Dashboard](f:/Youssef/moka/screenbshots/dashboard.png)
-![Menu Editing](f:/Youssef/moka/screenbshots/menu-editing.png) 
+![Menu](screenshots/menu.png)
+![Item Selection](screenshots/select-item.png)
+![Payment](screenshots/payment-method.png)
+![Admin Login](screenshots/admin-login-page.png)
+![Dashboard](screenshots/dashboard.png)
+![Menu Editing](screenshots/menu-editing.png) 
